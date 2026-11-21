@@ -503,22 +503,28 @@ export const projects: Project[] = [
       },
       {
         title: "My part",
-        body: "Stack3 is a team project. I built the VS Code extension — most of my commits are in `vs-extension/`. Attacker wallets and domains found in public repos are reported to the team's TigerGraph threat graph. It is published on the VS Code Marketplace.",
+        body: "Stack3 is a team project: a website and dashboard, a Chrome extension that checks websites and wallet requests before you sign, and the VS Code extension. **I built the VS Code extension** — most of my commits are in `vs-extension/`; the website and Chrome extension are my teammates' work. Attacker wallets and domains found in public repos are reported to the team's TigerGraph threat graph.",
       },
     ],
-    status: "Published on the VS Code Marketplace",
+    status: "VS Code extension on the Marketplace; Chrome extension on GitHub while its Web Store listing is in review",
     contribution: "The VS Code extension",
     context: "Team",
     year: "2026",
     stack: ["TypeScript", "VS Code API", "Socket.dev", "Claude Haiku", "TigerGraph"],
     links: [
+      { label: "Website", href: "https://stack3security.stack3security.workers.dev" },
       { label: "VS Code Marketplace", href: "https://marketplace.visualstudio.com/items?itemName=Stack3Security.stack3-vscode" },
+      { label: "Chrome extension (GitHub release)", href: "https://github.com/yashjain197/stack3security/releases/tag/chrome-v0.1.0" },
       { label: "Source", href: "https://github.com/yashjain197/stack3security" },
     ],
     visit: { label: "marketplace", href: "https://marketplace.visualstudio.com/items?itemName=Stack3Security.stack3-vscode" },
     shots: [
       { src: "/shots/stack3-1.png", w: 960, h: 870, caption: "Critical verdict — an auto-run task, an install script and a hidden payload" },
       { src: "/shots/stack3-2.png", w: 960, h: 330, caption: "A clean scan never says “safe”" },
+      { src: "/shots/stack3-site.png", w: 1440, h: 900, caption: "Stack3 website — the team's landing page" },
+      { src: "/shots/stack3-how.png", w: 1440, h: 900, caption: "How it works — checks at the code side and the wallet side" },
+      { src: "/shots/stack3-download.png", w: 1440, h: 900, caption: "Download page — VS Code from the Marketplace, Chrome from GitHub" },
+      { src: "/shots/stack3-chrome.png", w: 760, h: 760, caption: "Chrome extension popup (v0.1.0), before linking an account" },
     ],
     flows: [
       {
